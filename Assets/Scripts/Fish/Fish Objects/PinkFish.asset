@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ace82ccd160a2247986e1f7c372cbc2, type: 3}
   m_Name: PinkFish
   m_EditorClassIdentifier: 
-  Name: Basic Fish
-  Description: Just an ordinary fish
-  Sprite: {fileID: 21300000, guid: 137e20f359b787646b8662a5f93b7cb6, type: 3}
+  Name: Pink Fish
+  Description: OOH PRETTY!
+  Sprite: {fileID: 21300000, guid: 0e5a28eb038bd0243b3759c6444a6d99, type: 3}
   DropRate: 96
-  Weight: 0.1
-  Size: 10
-  Strength: 1
+  Weight: 27
+  Size: 58
+  Strength: 1.82
