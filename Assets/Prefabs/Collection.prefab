@@ -47,12 +47,15 @@ MonoBehaviour:
   FishPool:
   - {fileID: 11400000, guid: 08c3e6d73dc92614789cbb693cdd4b82, type: 2}
   - {fileID: 11400000, guid: cbbde522beb409f46adfa993be8b5fcb, type: 2}
+  - {fileID: 11400000, guid: aca4d91b237efac4da280e61b2b826dc, type: 2}
+  - {fileID: 11400000, guid: fbf5124d3b91d5f459bd318e30f64e34, type: 2}
   - {fileID: 11400000, guid: 5310a052f5ece9c42989a693a37a0204, type: 2}
   - {fileID: 11400000, guid: 71e6c0acc4d2f5747aec3a3c85007d84, type: 2}
   - {fileID: 11400000, guid: 6955c70057e0958498dc8c72cfccd766, type: 2}
   - {fileID: 11400000, guid: 6896368ef40eab24bbcfc912404a997e, type: 2}
   - {fileID: 11400000, guid: a4260e135a4824443a74869b47e57539, type: 2}
   - {fileID: 11400000, guid: 2b6dccc9b3b063a4bbae06af0b0c9baf, type: 2}
-  - {fileID: 11400000, guid: 833a625653d48ed43aab9b63d2e7f12f, type: 2}
   - {fileID: 11400000, guid: a483a9106358656439669d0c30da3c1c, type: 2}
+  - {fileID: 11400000, guid: 833a625653d48ed43aab9b63d2e7f12f, type: 2}
+  - {fileID: 11400000, guid: d945fc78323fd4942b42049cf2b764b5, type: 2}
   CollectedFish: []

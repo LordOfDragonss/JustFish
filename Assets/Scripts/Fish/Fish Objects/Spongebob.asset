@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ace82ccd160a2247986e1f7c372cbc2, type: 3}
-  m_Name: Radioactive fish
+  m_Name: Spongebob
   m_EditorClassIdentifier: 
-  Name: Radioactive fish
-  Description: Okay something is glowing
-  Sprite: {fileID: 21300000, guid: 0e79b19a92d61e4438e8feaac0813b32, type: 3}
-  DropRate: 23.2
-  Weight: 362
-  Size: 150
-  Strength: 1
+  Name: Red Fish
+  Description: Same fish Different Flavor
+  Sprite: {fileID: 21300000, guid: 96d5cbf82b320344bba874584f4052a3, type: 3}
+  DropRate: 41.4
+  Weight: 0.2
+  Size: 64
+  Strength: 6.01

@@ -23,7 +23,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0.8333333
-        value: 150
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -87,7 +87,7 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 1987834004
-      attribute: 538195251
+      attribute: 38095219
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -96,7 +96,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
     - serializedVersion: 2
       path: 1987834004
-      attribute: 38095219
+      attribute: 538195251
       script: {fileID: 0}
       typeID: 224
       customType: 28
@@ -131,7 +131,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0.8333333
-        value: 150
+        value: 0
         inSlope: 0
         outSlope: 0
         tangentMode: 136

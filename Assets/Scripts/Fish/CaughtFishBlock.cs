@@ -38,7 +38,7 @@ public class CaughtFishBlock : MonoBehaviour
         Name.text = fish.Name;
         Description.text = fish.Description;
         Size.text = $"Size: {fish.Size:F1}Cm"; // e.g., "Size 12.3Cm"
-        Weight.text = $"Weight: {fish.Weight:F1}Kg";
+        Weight.text = $"Weight: {fish.Weight:F1}g";
         menu.Show();
     }
 

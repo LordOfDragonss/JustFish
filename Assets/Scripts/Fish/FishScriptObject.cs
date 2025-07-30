@@ -13,7 +13,7 @@ public class FishScriptObject : ScriptableObject
     [Range(0.1f, 500)]
     [Tooltip("Weight in KG")]
     public float Weight; //weight in KG
-    [Range(10,500)]
+    [Range(1,300)]
     [Tooltip("Size in CM")]
     public float Size;//size in CM
     [Range(0, 10)]

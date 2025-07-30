@@ -17,5 +17,5 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: e06799e161bf16b439adef7e14c2c9bb, type: 3}
   DropRate: 22
   Weight: 227
-  Size: 111
+  Size: 120
   Strength: 1
