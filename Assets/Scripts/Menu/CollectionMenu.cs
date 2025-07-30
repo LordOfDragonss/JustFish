@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using static UnityEditor.Progress;
 
@@ -12,6 +13,8 @@ public class CollectionMenu : MonoBehaviour
     CollectionItem ItemPrefab;
     [SerializeField]
     List<CollectionItem> Items;
+    [SerializeField]
+    HashSet<string> collectedFishNames;
 
     private void Start()
     {
@@ -23,6 +26,7 @@ public class CollectionMenu : MonoBehaviour
         {
             var item = Instantiate(ItemPrefab, Collection.transform);
             item.name = fish.Name;
+            item.fishName = fish.Name;
             item.ItemImage.sprite = fish.Sprite;
             Items.Add(item);
         }
@@ -30,16 +34,11 @@ public class CollectionMenu : MonoBehaviour
 
     public void SetUnlockedCollection()
     {
+        collectedFishNames = new HashSet<string>(fishCollection.CollectedFish.Select(f => f.Name));
+
         foreach (var item in Items)
         {
-            if (fishCollection.CollectedFish.Find(f => f.name == item.name) != null)
-            {
-                item.ItemImage.color = Color.white;
-            }
-            else
-            {
-                item.ItemImage.color = Color.black;
-            }
+             item.ItemImage.color = collectedFishNames.Contains(item.fishName) ? Color.white : Color.black;
         }
     }
 }

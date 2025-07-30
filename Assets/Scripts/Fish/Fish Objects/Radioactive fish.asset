@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ace82ccd160a2247986e1f7c372cbc2, type: 3}
-  m_Name: InvertedFish
+  m_Name: Radioactive fish
   m_EditorClassIdentifier: 
-  Name: Fish inverted
-  Description: Is this fish okay
-  Sprite: {fileID: 21300000, guid: e06799e161bf16b439adef7e14c2c9bb, type: 3}
-  DropRate: 22
-  Weight: 227
-  Size: 111
+  Name: Radioactive fish
+  Description: Okay something is glowing
+  Sprite: {fileID: 21300000, guid: 0e79b19a92d61e4438e8feaac0813b32, type: 3}
+  DropRate: 23.2
+  Weight: 362
+  Size: 172
   Strength: 1

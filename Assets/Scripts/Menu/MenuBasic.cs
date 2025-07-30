@@ -8,6 +8,8 @@ public class MenuBasic : MonoBehaviour
     private bool visible;
     [SerializeField]
     Animator animator;
+    [SerializeField]
+    CollectionMenu collectionMenu;
 
     private void Awake()
     {
@@ -51,6 +53,7 @@ public class MenuBasic : MonoBehaviour
         else
         {
             menuGroup.SetActive(visible);
+            if (collectionMenu != null) collectionMenu.SetUnlockedCollection();
         }
     }
 }

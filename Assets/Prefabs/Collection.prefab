@@ -54,4 +54,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a4260e135a4824443a74869b47e57539, type: 2}
   - {fileID: 11400000, guid: 2b6dccc9b3b063a4bbae06af0b0c9baf, type: 2}
   - {fileID: 11400000, guid: 833a625653d48ed43aab9b63d2e7f12f, type: 2}
+  - {fileID: 11400000, guid: a483a9106358656439669d0c30da3c1c, type: 2}
   CollectedFish: []
