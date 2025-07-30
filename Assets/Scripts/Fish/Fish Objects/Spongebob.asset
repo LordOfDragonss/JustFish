@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ace82ccd160a2247986e1f7c372cbc2, type: 3}
   m_Name: Spongebob
   m_EditorClassIdentifier: 
-  Name: Red Fish
-  Description: Same fish Different Flavor
+  Name: Sponge
+  Description: Somebody found a crab burger
   Sprite: {fileID: 21300000, guid: 96d5cbf82b320344bba874584f4052a3, type: 3}
   DropRate: 41.4
   Weight: 0.2
   Size: 64
-  Strength: 6.01
+  Strength: 4
