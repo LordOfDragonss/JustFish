@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0ace82ccd160a2247986e1f7c372cbc2, type: 3}
-  m_Name: PoketApple
+  m_Name: GreenFish
   m_EditorClassIdentifier: 
-  Name: PocketApple
-  Description: Wait can you catch fish with these?
-  Sprite: {fileID: 21300000, guid: 7daa6a5af4468aa49b0a0884fc71cdd4, type: 3}
-  DropRate: 20
-  Weight: 2.7
-  Size: 75
-  Strength: 2
+  Name: Green Fish
+  Description: Is this one good?
+  Sprite: {fileID: 21300000, guid: 8e9f4d0b2e0350e44a47abb4ba834167, type: 3}
+  DropRate: 96
+  Weight: 57
+  Size: 29
+  Strength: 1
