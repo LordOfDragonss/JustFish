@@ -4791,7 +4791,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -7, y: -5, z: 0}
@@ -6141,7 +6141,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -7, y: -2, z: 0}
@@ -6616,7 +6616,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -6, y: -1, z: 0}
@@ -6666,7 +6666,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -4, y: -1, z: 0}
@@ -6791,7 +6791,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: -1, z: 0}
@@ -6916,7 +6916,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 6, y: -1, z: 0}
@@ -7241,7 +7241,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 1, y: 0, z: 0}
@@ -7716,7 +7716,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10
+      m_AnimationSpeed: 10.000001
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 2, y: 1, z: 0}
@@ -8516,7 +8516,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: -2, y: 3, z: 0}
@@ -8666,7 +8666,7 @@ Tilemap:
       - {fileID: 1691399020577927328, guid: ea992e5c669a86e449978379a9edad87, type: 3}
       - {fileID: -928423865, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
       - {fileID: -283823505, guid: e84262f04ecfefa45ba1c9676dc87cec, type: 3}
-      m_AnimationSpeed: 10.000001
+      m_AnimationSpeed: 10
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 4, y: 3, z: 0}
