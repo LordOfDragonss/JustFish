@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ace82ccd160a2247986e1f7c372cbc2, type: 3}
   m_Name: Chest
   m_EditorClassIdentifier: 
-  Name: Basic Fish
-  Description: Just an ordinary fish
-  Sprite: {fileID: 21300000, guid: 137e20f359b787646b8662a5f93b7cb6, type: 3}
-  DropRate: 96
-  Weight: 0.1
-  Size: 10
-  Strength: 0
+  Name: Chest
+  Description: You caught a chest???
+  Sprite: {fileID: -5281422124547630143, guid: 3bf67a18b918d3047a5303c7e786b86e, type: 3}
+  DropRate: 18.7
+  Weight: 192
+  Size: 50
+  Strength: 0.5

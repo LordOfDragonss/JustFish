@@ -35,7 +35,7 @@ public class MenuBasic : MonoBehaviour
     public IEnumerator HideAnim()
     {
         animator.SetTrigger("FlyOut");
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.5f);
         Debug.Log("Hiding " + gameObject.name);
         visible = false;
         menuGroup.SetActive(false);
@@ -44,6 +44,13 @@ public class MenuBasic : MonoBehaviour
     public void ToggleVisibility()
     {
         visible = !visible;
-        menuGroup.SetActive(visible);
+        if (!visible)
+        {
+            StartCoroutine(HideAnim());
+        }
+        else
+        {
+            menuGroup.SetActive(visible);
+        }
     }
 }

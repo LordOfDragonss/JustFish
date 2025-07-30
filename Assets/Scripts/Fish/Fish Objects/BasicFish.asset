@@ -18,4 +18,4 @@ MonoBehaviour:
   DropRate: 96
   Weight: 0.1
   Size: 10
-  Strength: 0
+  Strength: 1

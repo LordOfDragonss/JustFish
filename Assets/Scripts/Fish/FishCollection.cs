@@ -8,9 +8,9 @@ using Random = UnityEngine.Random;
 public class FishCollection : MonoBehaviour
 {
     [SerializeField]
-    FishScriptObject[] FishPool;
+    internal FishScriptObject[] FishPool;
     [SerializeField]
-    private List<FishScriptObject> CollectedFish;
+    internal List<FishScriptObject> CollectedFish;
     float[] table;
 
     private void Start()
@@ -28,6 +28,7 @@ public class FishCollection : MonoBehaviour
     {
         CollectedFish.Add(fish);
     }
+
     public FishScriptObject GetRandomFish()
     {
         float total = 0;
