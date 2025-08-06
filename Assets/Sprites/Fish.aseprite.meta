@@ -124,7 +124,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: Fish
     originalName: 
-    pivot: {x: 0.5, y: -0.35}
+    pivot: {x: 0.5, y: -0.11111111}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,7 +133,7 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 28
-      height: 20
+      height: 27
     spriteID: a068ba9c2a5177748ad976980a6fe60c
     spriteBone: []
     spriteOutline: []
@@ -157,9 +157,9 @@ ScriptedImporter:
       additiveSortOrder: 0
       cellRect:
         x: 2
-        y: 7
+        y: 3
         width: 28
-        height: 20
+        height: 27
       spriteId: a068ba9c2a5177748ad976980a6fe60c
     linkedCells: []
     parentIndex: -1

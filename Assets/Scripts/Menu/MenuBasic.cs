@@ -30,8 +30,16 @@ public class MenuBasic : MonoBehaviour
     public void Hide()
     {
         Debug.Log("Hiding " + gameObject.name);
-        visible = false;
-        menuGroup.SetActive(false);
+        if (animator != null)
+        {
+            StartCoroutine(HideAnim());
+        }
+        else
+        {
+            visible = false;
+            menuGroup.SetActive(false);
+        }
+
     }
 
     public IEnumerator HideAnim()

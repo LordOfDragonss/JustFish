@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41eea72f381f54443aea105fb5d0d8cd
+guid: ac2c28512f5d5134a9bfffea9912c7e0
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Gear
+  - name: XButton
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,8 +133,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 30
-      height: 32
-    spriteID: 0aa0d987184f26544904c655915a902d
+      height: 30
+    spriteID: d0eb6275a06e09048bac7e0d7d825141
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,21 +146,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -201255719
-    name: Gear
+    guid: 654576070
+    name: XButton
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Gear
+    - name: XButton
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 1
-        y: 0
+        y: 1
         width: 30
-        height: 32
-      spriteId: 0aa0d987184f26544904c655915a902d
+        height: 30
+      spriteId: d0eb6275a06e09048bac7e0d7d825141
     linkedCells: []
     parentIndex: -1
   platformSettings:

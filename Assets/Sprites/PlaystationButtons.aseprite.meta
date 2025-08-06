@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 41eea72f381f54443aea105fb5d0d8cd
+guid: 6444cb8bc2cc4144dbdb1919c27d18bf
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -122,9 +122,9 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: Gear
+  - name: PlaystationButtons
     originalName: 
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5, y: -0.033333335}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     customData: 
@@ -133,8 +133,8 @@ ScriptedImporter:
       x: 4
       y: 4
       width: 30
-      height: 32
-    spriteID: 0aa0d987184f26544904c655915a902d
+      height: 30
+    spriteID: 01430d71885612944ac117fc81f58de6
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -146,21 +146,21 @@ ScriptedImporter:
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: -201255719
-    name: Gear
+    guid: -699006997
+    name: PlaystationButtons
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: Gear
+    - name: PlaystationButtons
       frameIndex: 0
       additiveSortOrder: 0
       cellRect:
         x: 1
-        y: 0
+        y: 1
         width: 30
-        height: 32
-      spriteId: 0aa0d987184f26544904c655915a902d
+        height: 30
+      spriteId: 01430d71885612944ac117fc81f58de6
     linkedCells: []
     parentIndex: -1
   platformSettings:
