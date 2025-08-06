@@ -40,4 +40,15 @@ public class CollectionMenu : MonoBehaviour
              item.ItemImage.color = collectedFishNames.Contains(item.fishName) ? Color.white : Color.black;
         }
     }
+
+    public void OpenCollection()
+    {
+        SetUnlockedCollection();
+        AudioManager.instance.Play("OpenChest");
+    }
+
+    public void CloseCollection()
+    {
+        AudioManager.instance.Play("CloseChest");
+    }
 }

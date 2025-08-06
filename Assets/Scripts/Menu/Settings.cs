@@ -9,26 +9,43 @@ public class Settings : MonoBehaviour
     [SerializeField] MenuBasic settingsBasic;
     [Header("Sound")]
     [SerializeField] AudioMixer audioMixer;
+    [SerializeField] Slider masterSlider;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider SFXSlider;
+    [SerializeField] TextMeshProUGUI masterValue;
     [SerializeField] TextMeshProUGUI musicValue;
     [SerializeField] TextMeshProUGUI soundValue;
     [Header("Sceen")]
     [SerializeField] TMP_Dropdown ScreenMode;
     [SerializeField] TMP_Dropdown ResolutionDropDown;
+
+    int screenMode;
+    int resolutionOption;
     Resolution[] resolutions;
 
+    const string MIXER_MASTER = "MasterVolume";
     const string MIXER_MUSIC = "MusicVolume";
     const string MIXER_SFX = "SFXVolume";
+    const string SCREENMODE = "ScreenMode";
+    const string RESOLUTION = "Resolution";
 
 
     private void Awake()
     {
+        masterSlider.onValueChanged.AddListener(ChangeMainVolume);
         musicSlider.onValueChanged.AddListener(ChangeMusicVolume);
         SFXSlider.onValueChanged.AddListener(ChangeSFXVolume);
         ScreenMode.onValueChanged.AddListener(SetScreenMode);
         ResolutionDropDown.onValueChanged.AddListener(SetResolution);
         SetResolutionSettings();
+    }
+
+    private void Start()
+    {
+        if (PlayerPrefs.HasKey(MIXER_MASTER))
+        {
+            Load();
+        }
     }
 
     public void SetResolutionSettings()
@@ -62,6 +79,12 @@ public class Settings : MonoBehaviour
         settingsBasic.Hide();
     }
 
+    private void ChangeMainVolume(float volume)
+    {
+        audioMixer.SetFloat(MIXER_MASTER, Mathf.Log10(volume) * 20);
+        masterValue.text = (volume * 100).ToString();
+    }
+
     private void ChangeMusicVolume(float volume)
     {
         audioMixer.SetFloat(MIXER_MUSIC, Mathf.Log10(volume) * 20);
@@ -91,13 +114,32 @@ public class Settings : MonoBehaviour
                 Screen.fullScreenMode = FullScreenMode.ExclusiveFullScreen;
                 break;
         }
+        screenMode = value;
     }
 
     private void SetResolution(int value)
     {
         Resolution resolution = resolutions[value];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreenMode);
+        resolutionOption = value;
     }
 
+    public void Save()
+    {
+        PlayerPrefs.SetFloat(MIXER_MASTER, masterSlider.value);
+        PlayerPrefs.SetFloat(MIXER_MUSIC, musicSlider.value);
+        PlayerPrefs.SetFloat(MIXER_SFX, SFXSlider.value);
+        PlayerPrefs.SetInt(SCREENMODE, screenMode);
+        PlayerPrefs.SetInt(RESOLUTION, resolutionOption);
+    }
+
+    public void Load()
+    {
+        ChangeMainVolume(PlayerPrefs.GetFloat(MIXER_MASTER));
+        ChangeMusicVolume(PlayerPrefs.GetFloat(MIXER_MUSIC));
+        ChangeSFXVolume(PlayerPrefs.GetFloat(MIXER_SFX));
+        SetScreenMode(PlayerPrefs.GetInt(SCREENMODE));
+        SetResolution(PlayerPrefs.GetInt(RESOLUTION));
+    }
 
 }

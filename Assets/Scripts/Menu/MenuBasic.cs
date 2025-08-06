@@ -23,6 +23,7 @@ public class MenuBasic : MonoBehaviour
     public void Show()
     {
         Debug.Log("Showing " + gameObject.name);
+        AudioManager.instance.Play("Slide");
         visible = true;
         menuGroup.SetActive(true);
     }
@@ -45,6 +46,7 @@ public class MenuBasic : MonoBehaviour
     public IEnumerator HideAnim()
     {
         animator.SetTrigger("FlyOut");
+        AudioManager.instance.Play("Slide");
         yield return new WaitForSeconds(1.5f);
         Debug.Log("Hiding " + gameObject.name);
         visible = false;
@@ -57,11 +59,13 @@ public class MenuBasic : MonoBehaviour
         if (!visible)
         {
             StartCoroutine(HideAnim());
+            if (collectionMenu != null) collectionMenu.CloseCollection();
         }
         else
         {
-            menuGroup.SetActive(visible);
-            if (collectionMenu != null) collectionMenu.SetUnlockedCollection();
+            Show();
+            if (collectionMenu != null) collectionMenu.OpenCollection();
+            
         }
     }
 }

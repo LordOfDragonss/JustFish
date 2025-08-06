@@ -28,6 +28,7 @@ public class FishingControl : MonoBehaviour
     public bool isInMinigame = false;
     public bool isInFishCaughtScreen = false;
     private float caughtScreenTimer = 0f;
+    public float FishStrengthMultiplier = 1;
 
     [SerializeField]
     Animator caughscreenAnimator;
@@ -37,15 +38,16 @@ public class FishingControl : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        AudioManager.instance.Play("GameTheme");
         input = GetComponent<PlayerInput>();
         FishAction = input.actions["fish"];
     }
 
-    public void StopMinigame()
+    public IEnumerator StopMinigame()
     {
-
-        isInMinigame = false;
         FishingMinigame.Hide();
+        yield return new WaitForSeconds(1.5f);
+        isInMinigame = false;
     }
 
     public void CloseCaughtScreen()
@@ -95,16 +97,16 @@ public class FishingControl : MonoBehaviour
         if (CatchPercentage >= 100)
         {
             FishCaught(ActiveFish);
-            StopMinigame();
+            StartCoroutine(StopMinigame());
             return;
         }
         if (CatchPercentage <= 0)
         {
             FishLost();
-            StopMinigame();
+            StartCoroutine(StopMinigame());
             return;
         }
-        DecreaseCatchingSlider(ActiveFish.Strength * Time.deltaTime);
+        DecreaseCatchingSlider(ActiveFish.Strength * FishStrengthMultiplier * Time.deltaTime);
     }
 
     public void Fish()
@@ -119,6 +121,13 @@ public class FishingControl : MonoBehaviour
         CatchingSlider.value = CatchPercentage;
         isInMinigame = true;
         FishingMinigame.Show();
+        StartCoroutine(PlaySoundAfterAnim());
+    }
+
+    private IEnumerator PlaySoundAfterAnim()
+    {
+        yield return new WaitForSeconds(1f);
+        AudioManager.instance.Play("Reel");
     }
 
     public void IncreaseCatchingSlider(float value)
@@ -134,14 +143,25 @@ public class FishingControl : MonoBehaviour
     public void FishCaught(FishScriptObject fish)
     {
         Debug.Log("[FishControl] Congratulations you caught a " + fish.name);
+        AudioManager.instance.Stop("Reel");
+        AudioManager.instance.Play("WaterSplash");
+        StartCoroutine(PlaySoundAfterReveal());
         caughtScreenTimer = 0;
         isInFishCaughtScreen = true;
         caughtScreen.FillBlock(fish);
         FishCollection.AddFishToCollecttion(fish);
     }
 
+    public IEnumerator PlaySoundAfterReveal()
+    {
+        yield return new WaitForSeconds(1f);
+        AudioManager.instance.Play("FishCaught");
+    }
+
     public void FishLost()
     {
         Debug.Log("Fish has been lost");
+        AudioManager.instance.Stop("Reel");
+        AudioManager.instance.Play("FailSound");
     }
 }

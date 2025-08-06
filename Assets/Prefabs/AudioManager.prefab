@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1086733973971312275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9209601221852472967}
+  - component: {fileID: 7993438775190839679}
+  - component: {fileID: 1063131995818606251}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9209601221852472967
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086733973971312275}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7993438775190839679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086733973971312275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d76945aab37de5a49813cf8042ceff1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixerGroup: {fileID: 24300002, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+  sounds:
+  - name: MenuTheme
+    clip: {fileID: 8300000, guid: abaeebaec0196104086d120c79248a41, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: -8849790638051699504, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: GameTheme
+    clip: {fileID: 8300000, guid: d09d781b16e5d114f89b03877b328434, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: -8849790638051699504, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: Reel
+    clip: {fileID: 8300000, guid: e193275b8e95ac1429789500633765f2, type: 3}
+    volume: 0.761
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 1
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: FishCaught
+    clip: {fileID: 8300000, guid: 31d93b527d9d4e247b27a8f42dbb92a1, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: WaterSplash
+    clip: {fileID: 8300000, guid: bc8933b9f4e314840ad28a1a3f9c5396, type: 3}
+    volume: 0.88
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: FailSound
+    clip: {fileID: 8300000, guid: 84475840d92f79d43a1d44d664a36528, type: 3}
+    volume: 0.5
+    volumeVariance: 0
+    pitch: 0.75
+    pitchVariance: 0.5
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: OpenChest
+    clip: {fileID: 8300000, guid: c9d4d0057a26c1b4c8085873b761ea22, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: CloseChest
+    clip: {fileID: 8300000, guid: a8fe5155de902e14fb12e31815d00c28, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: SettingsClick
+    clip: {fileID: 8300000, guid: 7af6b51b905a6644585300b7c79f61ce, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+  - name: Slide
+    clip: {fileID: 8300000, guid: bfec463c5545da34ba8c7d23d02bedda, type: 3}
+    volume: 1
+    volumeVariance: 0
+    pitch: 1
+    pitchVariance: 0
+    loop: 0
+    mixerGroup: {fileID: -7700912137083026308, guid: c9d248dacd33c524587a60b007464f6e, type: 2}
+    source: {fileID: 0}
+--- !u!81 &1063131995818606251
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086733973971312275}
+  m_Enabled: 1
